@@ -94,5 +94,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(phrasesIntent);
             }
         });
+
+        // Find the View that shows the demon category
+        TextView demon = (TextView) findViewById(R.id.demon);
+
+        // Set a click listener on that View
+        demon.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the phrases category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link DemonActivity}
+                Intent demonIntent = new Intent(MainActivity.this, DemonActivity.class);
+
+                // Start the new activity
+                startActivity(demonIntent);
+            }
+        });
     }
 }
