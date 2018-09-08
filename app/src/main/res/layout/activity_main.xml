@@ -46,10 +46,4 @@
         android:background="@color/category_phrases"
         android:text="@string/category_phrases" />
 
-    <TextView
-        android:id="@+id/demon"
-        style="@style/CategoryStyle"
-        android:background="@color/category_demon"
-        android:text="@string/category_demon" />
-
 </LinearLayout>
