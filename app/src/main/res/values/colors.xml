@@ -34,7 +34,4 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
-
-    <!-- Background color for the demon category -->
-    <color name="category_demon">#002171</color>
 </resources>
