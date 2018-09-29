@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/group"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/word_image"
@@ -14,24 +14,35 @@
         android:id="@+id/my_colored_group"
         android:layout_width="match_parent"
         android:layout_height="@dimen/list_item_height"
-        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:layout_toRightOf="@id/word_image"
         android:gravity="center_vertical"
-        android:paddingLeft="16dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/miwok_translation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/default_translation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
     </LinearLayout>
 
-</LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/baseline_play_arrow_black_24dp" />
+
+
+</RelativeLayout>
